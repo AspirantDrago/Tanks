@@ -6,7 +6,7 @@ from modules.config import *
 
 def check_quit_event(event):
     if event.type == pygame.QUIT or \
-            event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
+            event.type == pygame.KEYDOWN and event.key == KeyControls.exit:
         quit()
 
 
