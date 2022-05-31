@@ -2,7 +2,6 @@ from modules.config import *
 import pygame
 from modules.functions import load_image
 import random
-import numpy as np
 import math
 
 shell_group = pygame.sprite.Group()
