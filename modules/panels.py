@@ -13,7 +13,7 @@ class Panels(pygame.sprite.Sprite):
     def update(self, *args, **kwargs):
         self.rect.bottom = self.tank.rect.top - PANEL_MARGIN
         self.clear()
-        self._draw_healf(0)
+        self._draw_health(0)
 
     def clear(self):
         self.image = pygame.Surface(
@@ -30,8 +30,8 @@ class Panels(pygame.sprite.Sprite):
         pygame.draw.rect(self.image, PANEL_COLOR_BORDER, rect,
                          width=PANEL_WIDTH_BORDER)
 
-    def _draw_healf(self, pos):
-        self._draw_panel(0, PANEL_COLOR_HEALF, self.tank.get_healf)
+    def _draw_health(self, pos):
+        self._draw_panel(0, PANEL_COLOR_HEALTH, self.tank.get_health)
         self._draw_panel(1, PANEL_COLOR_TIME, self.tank.get_reload)
 
 

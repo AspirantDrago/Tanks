@@ -2,9 +2,14 @@ import pygame
 from modules.functions import quit, check_quit_event, load_image
 from modules.config import *
 from modules.tank import TankLeft, TankRight
+from modules.tank_shell import TankShell
+
+all_sprites = None
 
 def game(screen):
+    TankShell.initial()
     image = load_image(FN_IMAGE_GAME_BACK)
+    global all_sprites
     all_sprites = pygame.sprite.Group()
     clock = pygame.time.Clock()
     tank_l = TankLeft(screen, all_sprites)

@@ -10,3 +10,5 @@ class KeyControls:
     tank_left_down = pygame.K_s
     tank_right_up = pygame.K_UP
     tank_right_down = pygame.K_DOWN
+    tank_left_fire = pygame.K_f
+    tank_right_fire = pygame.K_SPACE
